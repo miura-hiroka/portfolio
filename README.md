@@ -20,8 +20,6 @@
 - [Parser](https://github.com/miura-hiroka/portfolio/tree/main/parser)
 - [Tree structure](https://github.com/miura-hiroka/portfolio/tree/main/tree)
 
-式の解釈には自作の構文解析器を使用
-
 推論規則を繰り返し適用して、命題論理の定理を形式的に証明できます。
 
 コマンド  
