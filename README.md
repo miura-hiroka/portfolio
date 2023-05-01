@@ -3,7 +3,7 @@
 
 言語: Rust
 
-[ソースコード](https://github.com/miura-hiroka/mandelbrot.git)
+[ソースコード](https://github.com/miura-hiroka/portfolio/tree/main/mandelbrot)
 
 移動、ズームイン、ズームアウトができます。
 
