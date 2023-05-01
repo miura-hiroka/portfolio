@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Conway's Game of Life</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.4/FileSaver.min.js" integrity="sha512-e35tHhi6aPIZL4003XnvCy0fBMKquI2U3KwFWzFomF7pryelCq/KAAgErZIv7om4tPO+asEL8KLvBebzJQzSKw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div>
+    <h1>Conway's Game of Life</h1>
+    <canvas id="canvas" width="760" height="560"></canvas>
+    <div id="ui">
+      <span>
+        <label for="speed">Speed</label>
+        <input id="speed" type="range" min="-1" max="3.5" value="0" step="any">
+      </span>
+      <button id="button-play">Pause</button>
+      <span id="ui-record">
+        <button id="record" onclick="record()">Record</button>
+        <button id="save" disabled onclick="save()">Save</button>
+        <button id="cancel" disabled onclick="cancel()">Cancel</button>
+      </span>
+    </div>
+    <table>
+      <tr><td>Space</td><td>Pause/Play</td></tr>
+      <tr><td>Z</td><td>Clear</td></tr>
+      <tr><td>C</td><td>Next</td></tr>
+    </table>
+  </div>
+</body>
+</html>

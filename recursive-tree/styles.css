@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: black;
+}
+
+canvas {
+  border: 1px solid gray;
+}
+
+.ui-parameter {
+  display: flex;
+  justify-content: space-between;
+}
+

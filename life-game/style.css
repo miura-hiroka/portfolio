@@ -1,0 +1,46 @@
+body {
+  color: aliceblue;
+  background-color: rgb(35, 35, 35);
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  background-color: black;
+}
+
+#ui {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#ui-record {
+  margin-left: 30px;
+}
+
+#button-play {
+  width: 100px;
+}
+
+#record {
+  margin-left: 30px;
+  width: 100px;
+}
+
+#save {
+  width: 75px;
+}
+
+#cancel {
+  width: 75px;
+}
+
+table {
+  margin: 30px 10%;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid gray;
+}

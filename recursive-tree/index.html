@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Tree</title>
+  </head>
+  <body>
+    <div>
+      <canvas id="canvas" width="600" height="600"></canvas>
+      <table>
+        <tr>
+          <th scope="row"><label for="spread" class="label">spread</label></th>
+          <td><input id="spread" type="range" min="0" max="180" step="any" value="60"></td>
+        </tr>
+        <tr>
+          <th scope="row"><label for="scale" class="label">scale</label></th>
+          <td><input id="scale" type="range" min="0" max="1.25" step="any" value="0.75"></td>
+        </tr>
+        <tr>
+          <th scope="row"><label for="iter" class="label">iteration</label></th>
+          <td><input id="iter" type="number" min="1" max="15" value="6"></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

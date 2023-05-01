@@ -1,0 +1,25 @@
+# name front back associativity
+# Operators are listed in order of decreasing precedence.
+# If the associativity is not specified, the precedence is the same as the previous operator.
+
+T 0 0 L
+F 0 0 L
+
+- 0 1 R
+^ 1 1 L
+* 1 1 L
+/ 1 1
++ 1 1 L
++- 1 1
+
+= 1 1 L
+!= 1 1
+
+! 0 1 R
+& 1 1 L
+| 1 1 L
+-> 1 1 R
+
+∀ 1 1 R
+∃ 1 1
+

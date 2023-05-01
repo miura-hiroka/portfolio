@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+    <div>
+      <h1>マンデルブロ集合の描写プログラム</h1>
+      <p>言語: Rust</p>
+      <p><a href="https://github.com/miura-hiroka/mandelbrot.git">ソースコード</a></p>
+      <p>移動、ズームイン、ズームアウトができます。</p>
+      <p>
+        <img src="images/mandelbrot_1.png">
+        <img src="images/mandelbrot_2.png">
+      </p>
+    </div>
+
+    <div>
+      <h1>定理証明補助プログラム</h1>
+      <p>言語: Rust</p>
+      ソースコード<br>
+      <ul>
+        <li><a href="https://github.com/miura-hiroka/logic.git">(Logic)</a></li>
+        <li><a href="https://github.com/miura-hiroka/parser.git">ソースコード(Parser)</a></li>
+        <li><a href="https://github.com/miura-hiroka/tree.git">ソースコード(Tree structure)</a></li>
+      </ul>
+      <p>式の解釈には自作の構文解析器を使用</p>
+      <p>推論規則を繰り返し適用して、命題論理の定理を形式的に証明できます。</p>
+      <p>コマンド: <br>
+      <code>mp [ID1] [ID2]</code>: Modus ponens. A (ID1) と A -> B (ID2) からBを導出。<br>
+      <code>inst [ID] [variable] [formula]</code>: 自由変数を指定の式で置換。<br>
+      <code>show</code>: 証明済みの論理式をすべて表示。<br>
+      <code>save [filename]</code>: 証明済みの論理式をファイルに保存。<br>
+      <code>load [filename]</code>: 証明ファイルを読み込み。<br>
+      </p><p>
+      例: <code>a -> a</code> の証明<br>
+<code><pre>
+show
+0: a -&gt; b -&gt; a
+1: (a -&gt; b -&gt; c) -&gt; (a -&gt; b) -&gt; a -&gt; c
+2: ((a -&gt; F) -&gt; F) -&gt; a
+inst 0 b a -&gt; b
+3: a -&gt; (a -&gt; b) -&gt; a
+inst 1 c a
+4: (a -&gt; b -&gt; a) -&gt; (a -&gt; b) -&gt; a -&gt; a
+inst 4 b b -&gt; a
+5: (a -&gt; (b -&gt; a) -&gt; a) -&gt; (a -&gt; b -&gt; a) -&gt; a -&gt; a
+mp 3 5
+6: (a -&gt; b -&gt; a) -&gt; a -&gt; a
+mp 0 6
+7: a -&gt; a
+</pre></code></p>
+    </div>
+
+    <div>
+      <h1>再帰的な木</h1>
+      <p>言語: JavaScript</p>
+      <p><a href="recursive-tree/index.html">Recursive tree</a></p>
+      <p><a href="https://github.com/miura-hiroka/portfolio/tree/main/recursive-tree">ソースコード</a></p>
+    </div>
+
+    <div>
+      <h1>ライフゲーム (Conway's Game of Life)</h1>
+      <p>言語: JavaScript</p>
+      <p><a href="life-game/index.html">ライフゲーム</a></p>
+      <p><a href="https://github.com/miura-hiroka/portfolio/tree/main/life-game">ソースコード</a></p>
+    </div>
+
+  </body>
+</html>
